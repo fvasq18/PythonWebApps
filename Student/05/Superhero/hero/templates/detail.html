@@ -4,6 +4,10 @@
 <h1>Hero Details</h1>
 <ul>
     <li>Name: {{ object.name }}</li>
+    <li>Identity: {{object.identity}} </li>
     <li>Descripton: {{ object.description }}</li>
+    <li>Strength: {{object.strength}}</li>
+    <li>Weakness: {{object.weakness}}</li>
+    <li><img src="{{object.image}}" alt="image"></li>
 </ul>
 {% endblock content %}

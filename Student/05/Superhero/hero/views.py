@@ -4,9 +4,7 @@ from django.views.generic import CreateView, DeleteView,ListView,UpdateView, Det
 
 # Create your views here.
 
-class SuperheroView(ListView):
-    template_name = 'index.html'
-    model = Superhero
+
 class SuperheroCreateView(CreateView):
     template_name = "add.html"
     model = Superhero
@@ -15,7 +13,7 @@ class SuperheroDeleteView(DeleteView):
     model = Superhero
     template_name = 'delete.html'
 class SuperheroListView(ListView):
-    template_name = 'list.html'
+    template_name = 'index.html'
     model = Superhero
     context_object_name = 'heros'
 class SuperheroUpdateView(UpdateView):
